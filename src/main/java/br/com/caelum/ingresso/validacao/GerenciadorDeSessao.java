@@ -19,6 +19,8 @@ public class GerenciadorDeSessao {
 		boolean comecaDepois = sessaoExistente.getHorarioTermino().isBefore(sessaoNova.getHorario());
 		
 		if (terminaAntes || comecaDepois){
+// o ideal seria devolver mensagem para o usuario...		 
+			System.out.println("Teste");
 			return false;
 		}
 		return true;
